@@ -1,2 +1,2 @@
-#Just trying to understand Git
-#Testing Pull and Push via Powershell 
+Just trying to understand Git   
+Testing Pull and Push via Powershell 
