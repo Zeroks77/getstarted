@@ -1,0 +1,180 @@
+[1mdiff --git a/ConsoleApp1/ConsoleApp1/App.config b/ConsoleApp1/ConsoleApp1/App.config[m
+[1mdeleted file mode 100644[m
+[1mindex 7eb8d24..0000000[m
+[1m--- a/ConsoleApp1/ConsoleApp1/App.config[m
+[1m+++ /dev/null[m
+[36m@@ -1,6 +0,0 @@[m
+[31m-<?xml version="1.0" encoding="utf-8" ?>[m
+[31m-<configuration>[m
+[31m-    <startup>[m
+[31m-        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />[m
+[31m-    </startup>[m
+[31m-</configuration>[m
+[1mdiff --git a/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj b/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj[m
+[1mdeleted file mode 100644[m
+[1mindex a07e7ec..0000000[m
+[1m--- a/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj[m
+[1m+++ /dev/null[m
+[36m@@ -1,52 +0,0 @@[m
+[31m-﻿<?xml version="1.0" encoding="utf-8"?>[m
+[31m-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">[m
+[31m-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />[m
+[31m-  <PropertyGroup>[m
+[31m-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>[m
+[31m-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>[m
+[31m-    <ProjectGuid>{ED8F1DFB-FC78-4A84-831B-FE9C9DD0FAB6}</ProjectGuid>[m
+[31m-    <OutputType>Exe</OutputType>[m
+[31m-    <RootNamespace>ConsoleApp1</RootNamespace>[m
+[31m-    <AssemblyName>ConsoleApp1</AssemblyName>[m
+[31m-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>[m
+[31m-    <FileAlignment>512</FileAlignment>[m
+[31m-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>[m
+[31m-  </PropertyGroup>[m
+[31m-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">[m
+[31m-    <PlatformTarget>AnyCPU</PlatformTarget>[m
+[31m-    <DebugSymbols>true</DebugSymbols>[m
+[31m-    <DebugType>full</DebugType>[m
+[31m-    <Optimize>false</Optimize>[m
+[31m-    <OutputPath>bin\Debug\</OutputPath>[m
+[31m-    <DefineConstants>DEBUG;TRACE</DefineConstants>[m
+[31m-    <ErrorReport>prompt</ErrorReport>[m
+[31m-    <WarningLevel>4</WarningLevel>[m
+[31m-  </PropertyGroup>[m
+[31m-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">[m
+[31m-    <PlatformTarget>AnyCPU</PlatformTarget>[m
+[31m-    <DebugType>pdbonly</DebugType>[m
+[31m-    <Optimize>true</Optimize>[m
+[31m-    <OutputPath>bin\Release\</OutputPath>[m
+[31m-    <DefineConstants>TRACE</DefineConstants>[m
+[31m-    <ErrorReport>prompt</ErrorReport>[m
+[31m-    <WarningLevel>4</WarningLevel>[m
+[31m-  </PropertyGroup>[m
+[31m-  <ItemGroup>[m
+[31m-    <Reference Include="System" />[m
+[31m-    <Reference Include="System.Core" />[m
+[31m-    <Reference Include="System.Xml.Linq" />[m
+[31m-    <Reference Include="System.Data.DataSetExtensions" />[m
+[31m-    <Reference Include="Microsoft.CSharp" />[m
+[31m-    <Reference Include="System.Data" />[m
+[31m-    <Reference Include="System.Net.Http" />[m
+[31m-    <Reference Include="System.Xml" />[m
+[31m-  </ItemGroup>[m
+[31m-  <ItemGroup>[m
+[31m-    <Compile Include="Program.cs" />[m
+[31m-    <Compile Include="Properties\AssemblyInfo.cs" />[m
+[31m-  </ItemGroup>[m
+[31m-  <ItemGroup>[m
+[31m-    <None Include="App.config" />[m
+[31m-  </ItemGroup>[m
+[31m-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />[m
+[31m-</Project>[m
+\ No newline at end of file[m
+[1mdiff --git a/ConsoleApp1/ConsoleApp1/Program.cs b/ConsoleApp1/ConsoleApp1/Program.cs[m
+[1mdeleted file mode 100644[m
+[1mindex 4f69614..0000000[m
+[1m--- a/ConsoleApp1/ConsoleApp1/Program.cs[m
+[1m+++ /dev/null[m
+[36m@@ -1,61 +0,0 @@[m
+[31m-using System;[m
+[31m-using System.Collections.Generic;[m
+[31m-using System.Linq;[m
+[31m-using System.Text;[m
+[31m-using System.Threading.Tasks;[m
+[31m-[m
+[31m-namespace ConsoleApp1[m
+[31m-{[m
+[31m-    class Program[m
+[31m-    {[m
+[31m-        public int[] array;[m
+[31m-[m
+[31m-[m
+[31m-        static void Main(string[] args)[m
+[31m-        {[m
+[31m-            int[] array = new int[10];[m
+[31m-            int number;[m
+[31m-            int number2;[m
+[31m-            int counter = array.Length;[m
+[31m-            Random rnd = new Random();[m
+[31m-[m
+[31m-            for (int i = 0; i < array.Length; i++) // filling[m
+[31m-            {[m
+[31m-                array[i] = rnd.Next(1, array.Length);[m
+[31m-                Console.WriteLine(array[i]);[m
+[31m-                //Console.ReadKey();[m
+[31m-[m
+[31m-[m
+[31m-            }[m
+[31m-[m
+[31m-            while (counter != 0)[m
+[31m-            {[m
+[31m-                for (int i = 0; i < counter - 1; i++)[m
+[31m-                {[m
+[31m-                    number = array[i];[m
+[31m-                    number2 = array[i + 1];[m
+[31m-                    if (number > number2)[m
+[31m-                    {[m
+[31m-                        //Console.WriteLine(number + " is greater than " + number2);[m
+[31m-                        array[i] = number2;[m
+[31m-[m
+[31m-                        array[i + 1] = number;[m
+[31m-[m
+[31m-                    } //else Console.WriteLine(number + " is less than " + number2);[m
+[31m-[m
+[31m-                [m
+[31m-            }[m
+[31m-            counter--;[m
+[31m-                        }[m
+[31m-            Console.WriteLine();[m
+[31m-            Console.WriteLine();[m
+[31m-            Console.WriteLine();[m
+[31m-            for (int i = 0; i < array.Length; i++)[m
+[31m-            { [m
+[31m-                Console.WriteLine (array[i]);[m
+[31m-                Console.ReadKey();[m
+[31m-[m
+[31m-            }[m
+[31m-        }[m
+[31m-    }[m
+[31m-}[m
+[1mdiff --git a/ConsoleApp1/ConsoleApp1/Properties/AssemblyInfo.cs b/ConsoleApp1/ConsoleApp1/Properties/AssemblyInfo.cs[m
+[1mdeleted file mode 100644[m
+[1mindex f752e06..0000000[m
+[1m--- a/ConsoleApp1/ConsoleApp1/Properties/AssemblyInfo.cs[m
+[1m+++ /dev/null[m
+[36m@@ -1,36 +0,0 @@[m
+[31m-using System.Reflection;[m
+[31m-using System.Runtime.CompilerServices;[m
+[31m-using System.Runtime.InteropServices;[m
+[31m-[m
+[31m-// General Information about an assembly is controlled through the following[m
+[31m-// set of attributes. Change these attribute values to modify the information[m
+[31m-// associated with an assembly.[m
+[31m-[assembly: AssemblyTitle("ConsoleApp1")][m
+[31m-[assembly: AssemblyDescription("")][m
+[31m-[assembly: AssemblyConfiguration("")][m
+[31m-[assembly: AssemblyCompany("")][m
+[31m-[assembly: AssemblyProduct("ConsoleApp1")][m
+[31m-[assembly: AssemblyCopyright("Copyright ©  2018")][m
+[31m-[assembly: AssemblyTrademark("")][m
+[31m-[assembly: AssemblyCulture("")][m
+[31m-[m
+[31m-// Setting ComVisible to false makes the types in this assembly not visible[m
+[31m-// to COM components.  If you need to access a type in this assembly from[m
+[31m-// COM, set the ComVisible attribute to true on that type.[m
+[31m-[assembly: ComVisible(false)][m
+[31m-[m
+[31m-// The following GUID is for the ID of the typelib if this project is exposed to COM[m
+[31m-[assembly: Guid("ed8f1dfb-fc78-4a84-831b-fe9c9dd0fab6")][m
+[31m-[m
+[31m-// Version information for an assembly consists of the following four values:[m
+[31m-//[m
+[31m-//      Major Version[m
+[31m-//      Minor Version[m
+[31m-//      Build Number[m
+[31m-//      Revision[m
+[31m-//[m
+[31m-// You can specify all the values or you can default the Build and Revision Numbers[m
+[31m-// by using the '*' as shown below:[m
+[31m-// [assembly: AssemblyVersion("1.0.*")][m
+[31m-[assembly: AssemblyVersion("1.0.0.0")][m
+[31m-[assembly: AssemblyFileVersion("1.0.0.0")][m
