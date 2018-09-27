@@ -28,7 +28,7 @@ namespace Guess_the_Number
                 Console.WriteLine("Ok than guess what number i am thinking about : ");
                 int guess = Convert.ToInt32(Console.ReadLine());
                 int counter = 1;
-                while (guess != rand && guess != -322)
+                while (guess != rand && guess != cheat)
                 {
 
 
