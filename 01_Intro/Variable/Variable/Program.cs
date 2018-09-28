@@ -9,17 +9,7 @@ namespace Variable
     class Program
     {
         static void Main(string[] args)
-        {  //videourl : https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Y6D7PQQIC_5406218949
-            /*  int x;
-              int y;
-              x = 10;
-              y = 2;
-
-              Console.WriteLine((x - y) * x); //should be 80
-              Console.ReadKey();
-              */
-
-
+        { 
             Console.WriteLine("What's your name ?");
             Console.WriteLine("My name is : ");
             string firstname = Console.ReadLine();
