@@ -1,0 +1,2 @@
+D:\Develope\getstarted\01_Intro\Guess the Number\Guess the Number\obj\Debug\Guess the Number.csprojAssemblyReference.cache
+D:\Develope\getstarted\01_Intro\Guess the Number\Guess the Number\obj\Debug\Guess the Number.csproj.CoreCompileInputs.cache
