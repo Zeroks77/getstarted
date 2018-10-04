@@ -62,6 +62,7 @@ namespace Guess_the_Number
                     Console.WriteLine("Wrong input.");
                     break;
             }
+            return difficulty.Easy;
         }
         static void tryagain()
         {
